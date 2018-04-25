@@ -12,6 +12,9 @@
 		2479C76A208F286A00D6BD21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2479C768208F286A00D6BD21 /* Main.storyboard */; };
 		2479C76C208F286A00D6BD21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2479C76B208F286A00D6BD21 /* Assets.xcassets */; };
 		2479C76F208F286A00D6BD21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2479C76D208F286A00D6BD21 /* LaunchScreen.storyboard */; };
+		2479C777208F2A9000D6BD21 /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2479C776208F2A9000D6BD21 /* FloatingView.swift */; };
+		2479C77B208F81D100D6BD21 /* AAA.m in Sources */ = {isa = PBXBuildFile; fileRef = 2479C77A208F81D100D6BD21 /* AAA.m */; };
+		85BA17B99A1673DC812B97F9 /* Pods_FloatingWindowSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F99CF080CCC603649E85DAD6 /* Pods_FloatingWindowSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,14 @@
 		2479C76B208F286A00D6BD21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2479C76E208F286A00D6BD21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2479C770208F286A00D6BD21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2479C776208F2A9000D6BD21 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
+		2479C778208F81D000D6BD21 /* FloatingWindowSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FloatingWindowSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		2479C779208F81D100D6BD21 /* AAA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAA.h; sourceTree = "<group>"; };
+		2479C77A208F81D100D6BD21 /* AAA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAA.m; sourceTree = "<group>"; };
+		2479C77D208F833F00D6BD21 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9021380A59635C7AFCEC48FA /* Pods-FloatingWindowSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingWindowSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingWindowSwift/Pods-FloatingWindowSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		D82FD07AFDE2E48F76B48292 /* Pods-FloatingWindowSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingWindowSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingWindowSwift/Pods-FloatingWindowSwift.release.xcconfig"; sourceTree = "<group>"; };
+		F99CF080CCC603649E85DAD6 /* Pods_FloatingWindowSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingWindowSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BA17B99A1673DC812B97F9 /* Pods_FloatingWindowSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,8 @@
 			children = (
 				2479C763208F286A00D6BD21 /* FloatingWindowSwift */,
 				2479C762208F286A00D6BD21 /* Products */,
+				48846AD8DE4BE7AA622BFB58 /* Pods */,
+				AAC4064E616DC7F62BAD5DDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +74,30 @@
 				2479C76B208F286A00D6BD21 /* Assets.xcassets */,
 				2479C76D208F286A00D6BD21 /* LaunchScreen.storyboard */,
 				2479C770208F286A00D6BD21 /* Info.plist */,
+				2479C776208F2A9000D6BD21 /* FloatingView.swift */,
+				2479C779208F81D100D6BD21 /* AAA.h */,
+				2479C77A208F81D100D6BD21 /* AAA.m */,
+				2479C778208F81D000D6BD21 /* FloatingWindowSwift-Bridging-Header.h */,
 			);
 			path = FloatingWindowSwift;
+			sourceTree = "<group>";
+		};
+		48846AD8DE4BE7AA622BFB58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9021380A59635C7AFCEC48FA /* Pods-FloatingWindowSwift.debug.xcconfig */,
+				D82FD07AFDE2E48F76B48292 /* Pods-FloatingWindowSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAC4064E616DC7F62BAD5DDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2479C77D208F833F00D6BD21 /* libMasonry.a */,
+				F99CF080CCC603649E85DAD6 /* Pods_FloatingWindowSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2479C773208F286A00D6BD21 /* Build configuration list for PBXNativeTarget "FloatingWindowSwift" */;
 			buildPhases = (
+				40520DD0FA2E5095AA082C44 /* [CP] Check Pods Manifest.lock */,
 				2479C75D208F286A00D6BD21 /* Sources */,
 				2479C75E208F286A00D6BD21 /* Frameworks */,
 				2479C75F208F286A00D6BD21 /* Resources */,
+				3B083844B701E6DD566AAD64 /* [CP] Embed Pods Frameworks */,
+				A785B7BD2B76E3AA79455038 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +135,7 @@
 				TargetAttributes = {
 					2479C760208F286A00D6BD21 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,13 +171,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B083844B701E6DD566AAD64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FloatingWindowSwift/Pods-FloatingWindowSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingWindowSwift/Pods-FloatingWindowSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40520DD0FA2E5095AA082C44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FloatingWindowSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A785B7BD2B76E3AA79455038 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingWindowSwift/Pods-FloatingWindowSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2479C75D208F286A00D6BD21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2479C767208F286A00D6BD21 /* ViewController.swift in Sources */,
+				2479C777208F2A9000D6BD21 /* FloatingView.swift in Sources */,
 				2479C765208F286A00D6BD21 /* AppDelegate.swift in Sources */,
+				2479C77B208F81D100D6BD21 /* AAA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +370,17 @@
 		};
 		2479C774208F286A00D6BD21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9021380A59635C7AFCEC48FA /* Pods-FloatingWindowSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloatingWindowSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = songchengjie.FloatingWindowSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FloatingWindowSwift/FloatingWindowSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +388,16 @@
 		};
 		2479C775208F286A00D6BD21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82FD07AFDE2E48F76B48292 /* Pods-FloatingWindowSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FloatingWindowSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = songchengjie.FloatingWindowSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FloatingWindowSwift/FloatingWindowSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
